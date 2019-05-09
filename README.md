@@ -6,6 +6,7 @@ LeetCode JS
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|6|[Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [js](./algorithms/js/zigzag-conversion/zigzag-conversion.js)|<font color=#5cb85c>中等</font>  |
 |5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [js](./algorithms/js/longest-palindromic-substring/longest-palindromic-substring.js)|<font color=#5cb85c>中等</font>  |
 |4|[寻找两个有序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) | [js](./algorithms/js/median-of-two-sorted-arrays/median-of-two-sorted-arrays.js)|<font color=#5cb85c>困难</font>  |
 |3|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [js](./algorithms/js/longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.js)|<font color=#5cb85c>中等</font>  |
