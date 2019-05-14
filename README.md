@@ -6,6 +6,7 @@ LeetCode JS
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|9|[回文数](https://leetcode-cn.com/problems/palindrome-number/) | [js](./algorithms/js/zigzag-conversion/palindrome-number.js)|<font color=#5cb85c>简单</font>  |
 |8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) | [js](./algorithms/js/zigzag-conversion/string-to-integer-atoi.js)|<font color=#5cb85c>中等</font>  |
 |7|[整数反转](https://leetcode-cn.com/problems/reverse-integer//) | [js](./algorithms/js/zigzag-conversion/reverse-integer/.js)|<font color=#5cb85c>简单</font>  |
 |6|[Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [js](./algorithms/js/zigzag-conversion/zigzag-conversion.js)|<font color=#5cb85c>中等</font>  |
