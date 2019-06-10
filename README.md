@@ -6,19 +6,19 @@ LeetCode JS
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|118|[杨辉三角](https://leetcode-cn.com/pascals-triangle/) | [js](./algorithms/js/pascals-triangle/index.js)|<font color=#5cb85c>中等</font>  |
-|114|[二叉树展开为链表](https://leetcode-cn.com/flatten-binary-tree-to-linked-list/) | [js](./algorithms/js/flatten-binary-tree-to-linked-list/index.js)|<font color=#5cb85c>中等</font>  |
-|113|[路径总和 II](https://leetcode-cn.com/path-sum-ii/) | [js](./algorithms/js/path-sum-ii/index.js)|<font color=#5cb85c>中等</font>  |
-|112|[路径总和](https://leetcode-cn.com/path-sum/) | [js](./algorithms/js/path-sum/index.js)|<font color=#5cb85c>简单</font>  |
-|110|[平衡二叉树](https://leetcode-cn.com/balanced-binary-tree/) | [js](./algorithms/js/balanced-binary-tree/index.js)|<font color=#5cb85c>简单</font>  |
-|107|[二叉树的层次遍历 II](https://leetcode-cn.com/binary-tree-level-order-traversal-ii/) | [js](./algorithms/js/binary-tree-level-order-traversal-ii/index.js)|<font color=#5cb85c>简单</font>  |
-|104|[二叉树的最大深度](https://leetcode-cn.com/maximum-depth-of-binary-tree/) | [js](./algorithms/js/maximum-depth-of-binary-tree/index.js)|<font color=#5cb85c>简单</font>  |
-|103|[二叉树的锯齿形层次遍历](https://leetcode-cn.com/binary-tree-zigzag-level-order-traversal/) | [js](./algorithms/js/binary-tree-zigzag-level-order-traversal/index.js)|<font color=#5cb85c>中等</font>  |
-|102|[二叉树的层次遍历](https://leetcode-cn.com/binary-tree-level-order-traversal/) | [js](./algorithms/js/binary-tree-level-order-traversal/index.js)|<font color=#5cb85c>中等</font>  |
-|101|[对称二叉树](https://leetcode-cn.com/symmetric-tree/) | [js](./algorithms/js/symmetric-tree/index.js)|<font color=#5cb85c>简单</font>  |
-|100|[相同的树](https://leetcode-cn.com/same-tree/) | [js](./algorithms/js/same-tree/index.js)|<font color=#5cb85c>简单</font>  |
-|98|[验证二叉搜索树](https://leetcode-cn.com/validate-binary-search-tree/) | [js](./algorithms/js/validate-binary-search-tree/index.js)|<font color=#5cb85c>中等</font>  |
-|92|[反转链表 II](https://leetcode-cn.com/reverse-linked-list-ii/) | [js](./algorithms/js/reverse-linked-list-ii/index.js)|<font color=#5cb85c>中等</font>  |
+|118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [js](./algorithms/js/pascals-triangle/index.js)|<font color=#5cb85c>中等</font>  |
+|114|[二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/) | [js](./algorithms/js/flatten-binary-tree-to-linked-list/index.js)|<font color=#5cb85c>中等</font>  |
+|113|[路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/) | [js](./algorithms/js/path-sum-ii/index.js)|<font color=#5cb85c>中等</font>  |
+|112|[路径总和](https://leetcode-cn.com/problems/path-sum/) | [js](./algorithms/js/path-sum/index.js)|<font color=#5cb85c>简单</font>  |
+|110|[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | [js](./algorithms/js/balanced-binary-tree/index.js)|<font color=#5cb85c>简单</font>  |
+|107|[二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/) | [js](./algorithms/js/binary-tree-level-order-traversal-ii/index.js)|<font color=#5cb85c>简单</font>  |
+|104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | [js](./algorithms/js/maximum-depth-of-binary-tree/index.js)|<font color=#5cb85c>简单</font>  |
+|103|[二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | [js](./algorithms/js/binary-tree-zigzag-level-order-traversal/index.js)|<font color=#5cb85c>中等</font>  |
+|102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [js](./algorithms/js/binary-tree-level-order-traversal/index.js)|<font color=#5cb85c>中等</font>  |
+|101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | [js](./algorithms/js/symmetric-tree/index.js)|<font color=#5cb85c>简单</font>  |
+|100|[相同的树](https://leetcode-cn.com/problems/same-tree/) | [js](./algorithms/js/same-tree/index.js)|<font color=#5cb85c>简单</font>  |
+|98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) | [js](./algorithms/js/validate-binary-search-tree/index.js)|<font color=#5cb85c>中等</font>  |
+|92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | [js](./algorithms/js/reverse-linked-list-ii/index.js)|<font color=#5cb85c>中等</font>  |
 |88|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/merge-sorted-array/) | [js](./algorithms/js/merge-sorted-array/index.js)|<font color=#5cb85c>简单</font>  |
 |83|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [js](./algorithms/js/remove-duplicates-from-sorted-list/index.js)|<font color=#5cb85c>简单</font>  |
 |82|[删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/) | [js](./algorithms/js/remove-duplicates-from-sorted-list-ii/index.js)|<font color=#5cb85c>中等</font>  |
