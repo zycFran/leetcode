@@ -22,29 +22,21 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    var findSubStr = function(sub){
-        if(!sub.length){
-            return 0
-        }
-        let len = 0, suba = [];
-        suba.push(sub[0])
-        for(let i = 1; i < sub.length; i++){
-            if(suba.indexOf(sub[i]) >= 0){
-                len = i; 
-                break;
-            }
-            suba.push(sub[i]);
-        }
-        return suba.length
-    }  
-    if(!s.length){
-        return 0
+    if(!s) return 0;
+    if(s.length === 1){
+        return 1
     }
-    let l = 0;
-    for(let i = 0; i < s.length; i++){
-        l = Math.max(findSubStr(s.substr(i, s.length)), l)
+    let lookup = '', i = 0, len = s.length, re = 1;
+    while(i < len){
+        let idx = lookup.indexOf(s[i]);
+        if(idx < 0){
+            lookup += s[i];
+            re = Math.max(lookup.length, re)
+        }else{
+            lookup += s[i];
+            lookup = lookup.slice(idx + 1, lookup.length)
+        }
+        i++
     }
-    
-    return l;
-    
+    return re;
 };

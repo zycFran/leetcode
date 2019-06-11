@@ -1,23 +1,86 @@
-var trap = function(height) {
-    if(!height.length){
-        return 0
-    }
-    let len = height.length;
-    let left_max = [height[0]], right_max = [], 
-        re = 0;
-    right_max[len - 1] = height[len-1]
-    for(let i = 1; i < len; i++){
-        left_max[i] = Math.max(height[i], left_max[i-1]);
-    }
-    for(let i = len - 2; i>=0; i--){
-        right_max[i] = Math.max(height[i], right_max[i+1]);
-    }
-    console.log(left_max)
-    console.log(right_max)
-    for(let i = 1; i < len; i++){
-        re += Math.min(left_max[i], right_max[i]) - height[i]
-    }
-    return re;
-};
+var maximalRectangle = function(matrix) {
+    let max = 0;
+    let current = [];
 
-trap([0,1,0,2,1,0,1,3,2,1,2,1])
+    const largestArea = (arr) => {
+        let stack = [];
+        let i = 0;
+        let maxArea = 0;
+
+        while (i <= arr.length) {
+            if (!stack.length || arr[stack[stack.length - 1]] <= arr[i]) {
+                stack.push(i);
+                i++
+            } else {
+                let height = arr[stack.pop()];
+                let width = !stack.length ? i : i - stack[stack.length - 1] - 1;
+
+                // console.log("height:" + height + ' width:' + width);
+                let min = Math.min(height, width)
+                maxArea = Math.max(maxArea, min * min);
+
+            }
+        }
+
+        return maxArea;
+    };
+
+    for (let i = 0; i < matrix.length; i++) {
+        if (i > 0) {
+            for (let j = 0; j < current.length; j++) {
+                if (matrix[i][j] === "1") {
+                    current[j] = ~~current[j] + ~~matrix[i][j];
+                } else {
+                    current[j] = 0;
+                }
+            }
+        } else {
+            current = matrix[i];
+        }
+        max = Math.max(max, largestArea(current));
+    }
+    return max;
+};
+var maximalSquare = function(matrix) {
+    const maxFun = (arr)=>{
+        let max = 0, stack = [], i = 0;
+        let len = arr.length;
+        if(!len){
+            return 0;
+        }
+        while(i <= len){
+            if(!stack.length || arr[stack[stack.length - 1]] <= arr[i]){
+                stack.push(i++)
+            }else{
+                let h = arr[stack.pop()];
+                let w = !stack.length?i : i - 1 - stack[stack.length - 1]
+
+                let min = Math.min(h, w)
+                max = Math.max(min * min, max)
+            }
+        }
+        return max
+    }
+
+    let max = 0, row;
+    for(let i = 0, l1 = matrix.length; i < l1; i++){
+        if(i > 0){
+            for(let j = 0, l2 = row.length; j < l2; j++){
+                if(matrix[i][j] === '1'){
+                    row[j] = ~~row[j] + ~~matrix[i][j]
+                }else{
+                    row[j] = 0
+                }
+            }
+        }else{
+            row = matrix[i]
+        }
+        max = Math.max(max, maxFun(row));
+    }
+    return max;
+};
+let matirx = [["1"],["0"],["1"],["1"],["1"],["1"],["0"]];
+
+
+console.log(maximalSquare(matirx));
+ console.log(maximalRectangle(matirx));
